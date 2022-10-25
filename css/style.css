@@ -9,7 +9,7 @@ body {
 
 .cabecalho {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
     padding: 1em;
     background: #1f1f1f;
     color: #e0e0e0;
@@ -25,6 +25,11 @@ body {
 .menu_itens {
     display: flex;
     justify-content: space-evenly;
+}
+
+.carrinho {
+    display: flex;
+    justify-content: right;
 }
 
 .container {
@@ -52,4 +57,24 @@ body {
 
 .img {
     height: 30vh;
+}
+
+.botao {
+    font-weight: 400;
+    color: #e0e0e0;
+    background-color: #292929;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0.5em;
+    border-radius: 10px;
+    transition: 0.8s all;
+}
+
+.botao:hover {
+    transform: scale(1.1);
+}
+
+.produto_item p {
+    padding: 0.3em;
+    font-size: 20px;
 }
