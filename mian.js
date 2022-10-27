@@ -1,9 +1,11 @@
-const addCarrinho = document.querySelector('.botao');
+const addCarrinho = document.querySelectorAll('.botao');
 const popup = document.querySelector('.popup-wrapper');
 const closeBtn = document.querySelector('.popup-close');
 
-addCarrinho.addEventListener('click', () => {
-    popup.style.display = 'block';
+addCarrinho.forEach((itemAtual) => {
+    itemAtual.addEventListener('click', () => {
+        popup.style.display = 'block';
+    })
 })
 
 closeBtn.addEventListener('click', () => {
